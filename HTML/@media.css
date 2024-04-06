@@ -1,0 +1,53 @@
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    #games ul li {
+        width: calc(50% - 20px); /* Display two items per row */
+    }
+    #navbar {
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #games ul li {
+        width: calc(33.33% - 20px); /* Display three items per row */
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    marquee{
+        font-size: 20px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #games ul li {
+        width: calc(100% - 20px); /* Single item per row on even smaller screens */
+    }
+    #navbar {
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+    #home-scroll{
+        padding-top: 130px;
+    }
+    marquee{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
