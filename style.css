@@ -1,0 +1,485 @@
+*{
+    margin: 0  ;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Apply background image */
+body {
+    background-image: url('sample5.jpg'); /* Replace 'gaming-background.jpg' with your actual background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+}
+
+/* Apply an overlay to enhance ambiance */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+/* Center content vertically and horizontally */
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    font-family: 'Press Start 2P', cursive; /* Use a gaming-themed font */
+}
+
+/* Additional styling for a gaming-themed ambiance */
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Add animations or effects to enhance ambiance (optional) */
+
+
+/* CSS to hide the logo when scrolled */
+.logo.hidden {
+    display: none;
+}
+
+
+/*CSS for header */
+header {
+    background-color: #007ACC;
+    color: white;
+    text-align: center;
+    position: fixed;
+    transition: 2s;
+    border-radius: 0px 0px 50px 50px;
+    overflow: hidden;
+}
+
+/* CSS for navigation links */
+nav ul {
+    list-style-type: none;
+    column-gap:  2em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.sticky + main {
+    padding-top: 60px;
+}
+
+/* Updated CSS for header */
+header {
+    background-color: #212121; /* Dark background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0; /* Increased padding for better spacing */
+    border-bottom: 2px solid #03DAC5; /* Teal border bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: 'Press Start 2P', cursive; /* Gaming-style font */
+}
+
+/* Styling for the header title */
+header h1 {
+    font-size: 2rem; /* Larger font size */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White color for links */
+    font-size: 1.2rem; /* Font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #03DAC5; /* Teal color on hover */
+}
+
+
+
+.sticky + main {
+    padding-top: 60px;
+  }
+
+/* Hide descriptions by default */
+.description {
+    display: none;
+}
+
+/* Styling for the section */
+#home{
+    height: 100%;
+    width: 100%;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: X mandatory;
+    scroll-behavior: smooth;
+    box-shadow:0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: fill;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#games , #trailers , #walkthroughs , #advice , #news , #community{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);/* Adjust the alpha value (last parameter) to control transparency */
+    color: #fff; /* Text color */
+}
+
+#games.visible {
+    display: block; /* Show the reviews section when the 'visible' class is present */
+}
+
+/* Styling for the "Games" */
+
+#games ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#games ul li {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+#games ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+#games ul li img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+#games ul li p {
+    margin-top: 10px;
+    font-size: 0.9rem; /* Reduced font size for paragraphs */
+    line-height: 1.4;
+    z-index: 1;
+    text-align: left;
+}
+
+#games ul li button {
+    background-color: #03DAC5; /* Teal button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+#games h2 {
+    display: flex;
+    align-items: center;
+}
+
+#games h2 i {
+    margin-right: 5px;
+}
+
+#games .description i {
+    margin-right: 5px;
+}
+
+
+#games li h3 {
+    display: flex;
+    align-items: center;
+}
+
+#games li h3 i {
+    margin-left: 5px;
+}
+
+#games ul li button:hover {
+    background-color: #028e81; /* Darker teal on hover */
+}
+/*Trailers */
+
+
+.trailer {
+    margin-bottom: 20px;
+}
+
+.trailer video {
+    width: 100%; /* Adjust the width as needed */
+}
+
+#trailers h2 {
+    display: flex;
+    align-items: center;
+}
+
+#trailers h2 i {
+    margin-right: 5px;
+}
+
+
+/*Walkthroughs */
+
+.walkthrough ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.walkthrough {
+    margin-bottom: 20px;
+}
+
+.walkthrough video {
+    width: 100%; /* Adjust the width as needed */
+}
+
+#walkthroughs h2 {
+    display: flex;
+    align-items: center;
+}
+
+#walkthroughs h2 i {
+    margin-right: 5px;
+}
+
+/* Styling for the advice section */
+#advice {
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+#advice h2 {
+    font-size: 36px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+#advice p {
+    font-size: 18px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+.advice {
+    background-color: #333; /* Darker background color for advice boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.advice h3 {
+    font-size: 24px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.advice p {
+    font-size: 16px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.advice ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advice ul li {
+    margin-bottom: 5px;
+}
+
+/* Styling for the news section */
+#news {
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+#news h2 {
+    font-size: 36px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+#news p {
+    font-size: 18px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+.news {
+    background-color: #333; /* Darker background color for news boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.news h3 {
+    font-size: 24px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 16px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.news-date {
+    color: #999; /* Color for the date text */
+    font-size: 14px; /* Example font size */
+}
+
+/* Styling for the community section */
+#community {
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Example font family */
+}
+
+#community h2 {
+    font-size: 36px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+#community p {
+    font-size: 18px; /* Example font size */
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: #333; /* Darker background color for post boxes */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.post h3 {
+    font-size: 24px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px; /* Example font size */
+    margin-bottom: 10px;
+}
+
+.post-info {
+    color: #999; /* Color for the info text */
+    font-size: 14px; /* Example font size */
+}
+
+.post-icon {
+    font-size: 40px; /* Example icon size */
+    color: #ff9800; /* Example icon color */
+    margin-bottom: 10px;
+}
+
+/* Styling for the futuristic footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.3); /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Additional styling for a futuristic feel */
+footer {
+    border-top: 1px solid #444; /* Add a border at the top */
+    position: relative;
+    z-index: 1; /* Ensure footer is on top of other content */
+}
+
+.footer-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: -1;
+}
