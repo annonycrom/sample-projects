@@ -28,7 +28,7 @@
         font-size: 40px;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     #games ul li {
         width: calc(100% - 20px); /* Single item per row on even smaller screens */
     }
@@ -37,7 +37,7 @@
         font-size: 10px; /* Adjust font size for smaller screens */
     }
     nav ul li a{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     header h1{
@@ -47,7 +47,6 @@
         padding-top: 130px;
     }
     marquee{
-        padding-top: 10px;
         font-size: 15px;
     }
 }
