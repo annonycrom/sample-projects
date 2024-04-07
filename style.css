@@ -103,7 +103,7 @@ header {
     padding: 20px 0; /* Increased padding for better spacing */
     border-bottom: 2px solid #03DAC5; /* Teal border bottom */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    font-family: 'Press Start 2P', cursive; /* Gaming-style font */
+    font-family: "Orbitron", sans-serif; /* Gaming-style font */
 }
 
 /* Styling for the header title */
