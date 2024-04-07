@@ -53,7 +53,9 @@ p {
 .logo.hidden {
     display: none;
 }
-
+.logo{
+    font-weight: 800px;
+}
 
 /*CSS for header */
 header {
