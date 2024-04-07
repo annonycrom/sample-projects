@@ -38,23 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  // JavaScript for automatic scrolling
- const slider = document.getElementById('slider');
- let scrollInterval;
+ function startSlider() {
+            var slides = document.querySelectorAll('.slider img');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
 
- function startAutoScroll() {
-     scrollInterval = setInterval(() => {
-         slider.scrollLeft += slider.clientWidth;
-         if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
-             slider.scrollLeft = 0;
-         }
-     }, 1000); // Change this value to adjust the scroll speed (in milliseconds)
- }
-
- function stopAutoScroll() {
-     clearInterval(scrollInterval);
- }
-
- startAutoScroll();
-
-slider.addEventListener('mouseenter', stopAutoScroll);
-slider.addEventListener('mouseleave', startAutoScroll);
+            function nextSlide() {
+                slides[currentSlide].style.display = 'none';
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].style.display = 'block';
+            }
+        }
