@@ -28,7 +28,7 @@
         font-size: 40px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 468px) {
     #games ul li {
         width: calc(100% - 20px); /* Single item per row on even smaller screens */
     }
