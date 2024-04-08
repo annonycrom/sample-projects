@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +17,8 @@
 </head>
 <body>
     <header id="navbar">
-        <h1 class="logo">GamingZone</h1>
-        <nav>
+        <h1 class="logo">GamingZone <i class="fa fa-bars" onclick="toggleNavbar()"></i></h1>
+        <nav class="collapsible">
             <ul>
                 <li><a href="#home-scroll">Home</a></li>
                 <li><a href="#games-scroll">Games</a></li>
@@ -53,89 +55,90 @@
             <div>
                 <ul>
                     <li>
-                        <h3>sample 1 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 2 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 3 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 4 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 5 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                       <button class="toggle-btn">View</button>
-                       <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 6 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 7 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 8 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 9 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 10 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 11 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">View</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
-                    <li>
-                        <h3>sample 12 <i class="fa fa-star"></i></h3>
-                        <img src="sample4.jpg">
-                        <p class="description"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio fugit dolorum magni veritatis nostrum illum, repellat officia. Dolore iure illum fuga assumenda id fugit sapiente magnam omnis illo nemo.</p>
-                        <button class="toggle-btn">Toggle</button>
-                        <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
-                    </li>
+    <h3>Game 1: Adventure Quest <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Adventure Quest">
+    <p class="description"><i class="fa fa-info-circle"></i> Embark on an epic journey through mystical lands and ancient ruins in this action-packed adventure RPG. Uncover hidden treasures, battle fearsome monsters, and become the ultimate hero.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 2: Galactic Warfare <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Galactic Warfare">
+    <p class="description"><i class="fa fa-info-circle"></i> Engage in intense space battles and strategic warfare across the galaxy. Command your fleet, conquer enemy territories, and lead your faction to victory in this sci-fi strategy game.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 3: Dungeon Crawler <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Dungeon Crawler">
+    <p class="description"><i class="fa fa-info-circle"></i> Descend into the depths of perilous dungeons filled with traps, monsters, and untold riches. Test your bravery and skill as you navigate through labyrinthine corridors and face off against legendary foes.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 4: Cyberpunk Chronicles <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Cyberpunk Chronicles">
+    <p class="description"><i class="fa fa-info-circle"></i> Immerse yourself in a dystopian future where cybernetic enhancements and corporate intrigue reign supreme. Hack your way through cyberspace, forge alliances, and uncover dark conspiracies in this futuristic RPG.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 5: Fantasy Realms <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Fantasy Realms">
+    <p class="description"><i class="fa fa-info-circle"></i> Enter a world of magic and wonder, where mythical creatures roam and ancient powers await discovery. Craft spells, summon legendary beasts, and embark on epic quests in this enchanting fantasy adventure.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 6: Racing Rivals <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Racing Rivals">
+    <p class="description"><i class="fa fa-info-circle"></i> Feel the adrenaline rush as you compete against rival drivers in high-speed races across exotic locales. Customize your ride, master drifting techniques, and claim victory in this thrilling racing game.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 7: Survival Simulator <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Survival Simulator">
+    <p class="description"><i class="fa fa-info-circle"></i> Test your survival skills in a harsh wilderness where danger lurks around every corner. Hunt for food, build shelter, and fend off predators as you strive to stay alive in this immersive survival experience.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 8: Pirate's Plunder <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Pirate's Plunder">
+    <p class="description"><i class="fa fa-info-circle"></i> Set sail on the high seas and embark on a swashbuckling adventure filled with treasure, betrayal, and daring escapades. Command your crew, plunder enemy ships, and become the most feared pirate captain.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 9: Space Odyssey <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Space Odyssey">
+    <p class="description"><i class="fa fa-info-circle"></i> Explore the vast expanse of space in search of new worlds, alien civilizations, and untold mysteries. Build space stations, engage in interstellar trade, and chart your course through the cosmos in this epic space simulation.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 10: Mystic Legends <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Mystic Legends">
+    <p class="description"><i class="fa fa-info-circle"></i> Unravel the mysteries of a forgotten realm where magic and technology collide. Gather artifacts, battle mythical beasts, and rewrite the fate of the world in this captivating RPG adventure.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 11: Virtual Reality <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Virtual Reality">
+    <p class="description"><i class="fa fa-info-circle"></i> Immerse yourself in a virtual world where anything is possible. Experience breathtaking landscapes, engage in thrilling adventures, and redefine reality in this cutting-edge VR experience.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+<li>
+    <h3>Game 12: Wild West Outlaws <i class="fa fa-star"></i></h3>
+    <img src="sample4.jpg" alt="Wild West Outlaws">
+    <p class="description"><i class="fa fa-info-circle"></i> Ride into the sunset and become a legend of the American frontier. Rob banks, duel outlaws, and carve out your own path in the lawless land of the Wild West.</p>
+    <button class="toggle-btn">View</button>
+    <button><a href="#" style="text-decoration: none; color: #fff;">Play</a></button>
+</li>
+
                     <!-- Add more news sections in a similar structure -->
                 </ul>
             </div>
@@ -197,78 +200,168 @@
                 <!-- Add more news sections in a similar structure -->
             </div>
         </section>
-       <!-- Inside the "Expert Advice" section -->
-       <section id="advice-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
-        <section id="advice">
-            <h2><i class="fa fa-lightbulb-o"></i> Expert Advice</h2>
-            <div class="advice">
-                <h3><i class="fa fa-gamepad"></i> Advice 1 Title</h3>
-                <p>Description of Advice 1</p>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i> Tip 1</li>
-                    <li><i class="fa fa-check-circle"></i> Tip 2</li>
-                    <li><i class="fa fa-check-circle"></i> Tip 3</li>
-                    <!-- Add more tips as needed -->
-                </ul>
-            </div>
-            <div class="advice">
-                <h3><i class="fa fa-gamepad"></i> Advice 2 Title</h3>
-                <p>Description of Advice 2</p>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i> Tip 1</li>
-                    <li><i class="fa fa-check-circle"></i> Tip 2</li>
-                    <li><i class="fa fa-check-circle"></i> Tip 3</li>
-                    <!-- Add more tips as needed -->
-                </ul>
-            </div>
-            <!-- Add more advice sections in a similar structure -->
-        </section>
+  
+        
 
-        <section id="news-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
-        <section id="news">
-            <h2><i class="fa fa-gamepad"></i> Latest Gaming News</h2>
-            <p>Stay updated with the latest gaming news, events, and trends.</p>
-            <div class="news">
-                <h3><i class="fa fa-star"></i> News 1 Title</h3>
-                <p>Description of News 1</p>
-                <p>Date: January 1, 2024</p>
-            </div>
-            <div class="news">
-                <h3><i class="fa fa-star"></i> News 2 Title</h3>
-                <p>Description of News 2</p>
-                <p>Date: January 2, 2024</p>
-            </div>
-            <!-- Add more news sections in a similar structure -->
-        </section>
-        <!-- Inside the "Community" section -->
-        <section id="community-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
-        <section id="community">
-            <h2><i class="fa fa-users"></i> Community</h2>
-            <p>A dedicated forum or social media integration to foster interaction and discussion among users.</p>
-            <div>
-                <div class="post">
-                    <h3><i class="fa fa-comments"></i> Community Post 1</h3>
-                    <p>Description of Community Post 1</p>
-                    <p>Posted by: User123</p>
-                    <p>Date: January 1, 2024</p>
-                </div>
-                <div class="post">
-                    <h3><i class="fa fa-comments"></i> Community Post 2</h3>
-                    <p>Description of Community Post 2</p>
-                    <p>Posted by: User456</p>
-                    <p>Date: January 2, 2024</p>
-                </div>
-                <!-- Add more community posts in a similar structure -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <i class="fas fa-robot robot-icon"></i>
-        <h6>Disclaimer:</h6>
-        <p>This website is for educational purposes only. The content provided is for demonstration purposes and does not constitute endorsements. Users are advised to verify information independently. All trademarks belong to their respective owners.</p>
-        <p class="copyright">© 2024 Final Group Project.</p>
-    </footer>
-    <h6 style="text-align: center;"><small>By SYNCRO.</small></h6>
+<!-- Inside the "Expert Advice" section -->
+<section id="advice-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
+<section id="advice">
+    <!-- Expert Advice section -->
+    <h2><i class="fa fa-lightbulb-o"></i> Expert Advice</h2>
+    <!-- Advice 1 -->
+    <div class="advice">
+        <h3><i class="fa fa-gamepad"></i> Mastering Stealth in Action Games</h3>
+        <!-- Description -->
+        <p>Stealth can be a game-changer in action games. Here are some tips to become a stealthy master:</p>
+        <!-- Tips -->
+        <ul>
+            <li><i class="fa fa-check-circle"></i> Use the environment to your advantage by hiding in shadows or behind objects.</li>
+            <li><i class="fa fa-check-circle"></i> Patience is key; observe enemy patterns and strike when the time is right.</li>
+            <li><i class="fa fa-check-circle"></i> Utilize distractions like throwing objects to lure enemies away from their posts.</li>
+            <li><i class="fa fa-check-circle"></i> Upgrade stealth-related skills or equipment to enhance your effectiveness.</li>
+        </ul>
+    </div>
+    <!-- Advice 2 -->
+    <div class="advice">
+        <h3><i class="fa fa-gamepad"></i> Solving Puzzles Like a Pro</h3>
+        <!-- Description -->
+        <p>Puzzles can stump even the most seasoned gamers. Here's how to tackle them like a pro:</p>
+        <!-- Tips -->
+        <ul>
+            <li><i class="fa fa-check-circle"></i> Break down complex puzzles into smaller parts and solve them systematically.</li>
+            <li><i class="fa fa-check-circle"></i> Take breaks if you're stuck; sometimes, a fresh perspective can lead to a solution.</li>
+            <li><i class="fa fa-check-circle"></i> Don't hesitate to seek help from in-game hints or online guides when needed.</li>
+            <li><i class="fa fa-check-circle"></i> Experiment with different approaches; there's often more than one way to solve a puzzle.</li>
+        </ul>
+    </div>
+    <!-- Add more advice sections in a similar structure -->
+</section>
+
+
+<!-- Inside the "Latest Gaming News" section -->
+<section id="news-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
+<section id="news">
+    <!-- Latest Gaming News section -->
+    <h2><i class="fa fa-gamepad"></i> Latest Gaming News</h2>
+    <!-- Introduction -->
+    <p>Stay updated with the latest gaming news, events, and trends.</p>
+    <!-- News 1 -->
+    <div class="news">
+        <h3><i class="fa fa-star"></i> Exciting Announcement from GamingHub</h3>
+        <!-- Description -->
+        <p>GamingHub, the leading gaming platform, announces the release date for its highly anticipated game, "Epic Quest: Origins". Get ready for an adventure of a lifetime!</p>
+        <!-- Date -->
+        <p>Date: April 5, 2024</p>
+    </div>
+    <!-- News 2 -->
+    <div class="news">
+        <h3><i class="fa fa-star"></i> Exclusive Interview with Game Developer</h3>
+        <!-- Description -->
+        <p>We sat down with the creative minds behind the hit game "Galactic Explorers" to discuss their inspiration, challenges faced during development, and future plans for the game. Dive into the interview to learn more!</p>
+        <!-- Date -->
+        <p>Date: April 6, 2024</p>
+    </div>
+    <!-- News 3 -->
+    <div class="news">
+        <h3><i class="fa fa-star"></i> New Expansion for "Fantasy Realm" Announced</h3>
+        <!-- Description -->
+        <p>Prepare to delve deeper into the enchanting world of "Fantasy Realm" with the upcoming expansion pack, "Legends of Eldoria". Uncover new quests, creatures, and mysteries in this epic adventure!</p>
+        <!-- Date -->
+        <p>Date: April 7, 2024</p>
+    </div>
+    <!-- News 4 -->
+    <div class="news">
+        <h3><i class="fa fa-star"></i> Esports Tournament Finals Set to Begin</h3>
+        <!-- Description -->
+        <p>The stage is set for the grand finals of the annual Esports Championship Series. Witness the clash of the titans as top teams compete for glory and a hefty prize pool. Don't miss out on the action!</p>
+        <!-- Date -->
+        <p>Date: April 8, 2024</p>
+    </div>
+    <!-- News 5 -->
+    <div class="news">
+        <h3><i class="fa fa-star"></i> Virtual Reality Gaming Expo 2024</h3>
+        <!-- Description -->
+        <p>Experience the future of gaming at the Virtual Reality Gaming Expo 2024. Immerse yourself in cutting-edge VR technology, demo upcoming titles, and connect with fellow gaming enthusiasts. Get your tickets now!</p>
+        <!-- Date -->
+        <p>Date: April 9-11, 2024</p>
+    </div>
+    <!-- Add more news sections in a similar structure -->
+</section>
+
+<!-- Inside the "Community" section -->
+<section id="community-scroll" style="padding-top: 50px; background-color: rgba(0, 0, 0, 0.3); /* Dark background color */"></section>
+<section id="community">
+    <!-- Community title and description -->
+    <h2><i class="fa fa-users"></i> Community</h2>
+    <p>A dedicated forum or social media integration to foster interaction and discussion among users.</p>
+    <div>
+        <!-- Sample community post 1 -->
+        <div class="post">
+            <h3><i class="fa fa-comments"></i> Community Post 1</h3>
+            <!-- Post description -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id libero nec ex semper vehicula.</p>
+            <!-- Post details -->
+            <p>Posted by: JohnDoe</p>
+            <p>Date: April 7, 2024</p>
+        </div>
+        <!-- Sample community post 2 -->
+        <div class="post">
+            <h3><i class="fa fa-comments"></i> Community Post 2</h3>
+            <!-- Post description -->
+            <p>Integer et nisi vel libero pellentesque pretium. Ut faucibus arcu eget dolor scelerisque, nec consequat felis semper.</p>
+            <!-- Post details -->
+            <p>Posted by: JaneSmith</p>
+            <p>Date: April 8, 2024</p>
+        </div>
+        <!-- Sample community post 3 -->
+        <div class="post">
+            <h3><i class="fa fa-comments"></i> Community Post 3</h3>
+            <!-- Post description -->
+            <p>Quisque nec quam sit amet justo fermentum tincidunt. Nam pharetra elit ac venenatis cursus.</p>
+            <!-- Post details -->
+            <p>Posted by: GamingFanatic</p>
+            <p>Date: April 9, 2024</p>
+        </div>
+        <!-- Sample community post 4 -->
+        <div class="post">
+            <h3><i class="fa fa-comments"></i> Community Post 4</h3>
+            <!-- Post description -->
+            <p>Sed sed lectus fermentum, tempus justo eu, eleifend metus. Vivamus mattis sem eget lacus iaculis tincidunt.</p>
+            <!-- Post details -->
+            <p>Posted by: RetroGamer</p>
+            <p>Date: April 10, 2024</p>
+        </div>
+        <!-- Sample community post 5 -->
+        <div class="post">
+            <h3><i class="fa fa-comments"></i> Community Post 5</h3>
+            <!-- Post description -->
+            <p>Aliquam erat volutpat. Aenean fermentum, risus sit amet laoreet tempus, mauris risus tincidunt neque, vel ultrices orci leo eu eros.</p>
+            <!-- Post details -->
+            <p>Posted by: PlayerOne</p>
+            <p>Date: April 11, 2024</p>
+        </div>
+    </div>
+</section>
+
+    </main><footer>
+    <!-- Disclaimer section -->
+    <h6><i class="fa fa-android" aria-hidden="true"></i> Disclaimer:</h6>
+    <!-- Disclaimer content -->
+    <p>This website is for educational purposes only. The content provided is for demonstration purposes and does not constitute endorsements. Users are advised to verify information independently. All trademarks belong to their respective owners.</p>
+    <!-- Copyright notice -->
+    <p class="copyright">© 2024 Final Group Project.</p>
+    <!-- Social media icons -->
+    <div class="social-icons">
+        <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+</footer>
+<!-- Footer credits -->
+<h6 style="text-align: center;"><small>By SYNCRO.</small></h6>
+
+    
 </body>
 <script src="function.js"></script>
 </html>
